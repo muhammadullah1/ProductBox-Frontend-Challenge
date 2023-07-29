@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.ant-menu-title-content {
+  color: #231f1e;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+}
+.ant-menu-title-content::after {
+  display: none !important;
+}
+
+.custom-menu .ant-menu-item-selected svg {
+  fill: #ffffff !important;
+}
+
+.custom-menu .ant-menu-item-active span {
+  color: #95989b !important;
+  font-weight: bold !important;
+}
+
+.custom-menu .ant-menu-item-selected span {
+  color: #043e0d !important;
+  font-weight: bold !important;
+}
+
+.custom-menu .ant-menu-item:hover {
+  background-color: #9bbdda;
+  color: #4d5054;
+}
+
+.ant-menu-title-content,
+.ant-menu-title-content * {
+  cursor: pointer !important;
+}
+.additem-btn:hover {
+  background-color: #043e0d !important;
+}
