@@ -39,7 +39,7 @@ const AddnNewItems = () => {
                     <Form layout={"vertical"} onFinish={handleFinish} form={form}>
                         <div class="lg:w-1/2 md:w-2/3 mx-auto">
                             <div class="mx-auto">
-                                <div class="p-2 w-1/2 mx-auto">
+                                <div class="p-2 md:w-1/2 mx-auto">
                                     <div class="relative">
                                         <FormTextInput
                                             name={"name"}
@@ -47,7 +47,7 @@ const AddnNewItems = () => {
                                         />
                                     </div>
                                 </div>
-                                <div class="p-2 w-1/2 mx-auto">
+                                <div class="p-2 md:w-1/2 mx-auto">
                                     <div class="relative">
                                         <FormTextInput
                                             name={"price"}
@@ -56,7 +56,7 @@ const AddnNewItems = () => {
                                         />
                                     </div>
                                 </div>
-                                <div class="p-2 w-1/2 mx-auto">
+                                <div class="p-2 md:w-1/2 mx-auto">
                                     <div class="relative">
                                         <FormTextInput
                                             name={"img"}

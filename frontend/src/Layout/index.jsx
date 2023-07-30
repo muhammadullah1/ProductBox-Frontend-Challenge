@@ -71,7 +71,7 @@ const index = ({ children, selectedPath = '' }) => {
                 <Row justify="space-between" align="middle" style={{ background: "#FAF9F6" }}>
                     <Col xs={20} sm={20} md={6} lg={4} >
                         <div
-                            className="logo cursor-pointer"
+                            className="logo cursor-pointer lg:mx-10"
                             onClick={() => navigate("/")}
                         >
                             <Logo />
@@ -79,7 +79,7 @@ const index = ({ children, selectedPath = '' }) => {
                     </Col>
                     <Col xs={0} sm={0} md={16} lg={19}>
                         <Row justify="space-between" align="middle">
-                            <Col xs={0} sm={0} md={14} lg={18}>
+                            <Col xs={0} sm={0} md={14} lg={12}>
                                 <Menu
                                     onClick={onClick}
                                     selectedKeys={[current]}
@@ -89,15 +89,19 @@ const index = ({ children, selectedPath = '' }) => {
                                     className="custom-menu"
                                     style={{ background: "#FAF9F6" }} />
                             </Col>
-                            <Col xs={0} sm={0} md={8} lg={5}>
-                                <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={rightMenuItems} className="custom-menu"
-                                    style={{ background: "#FAF9F6" }} />
+                            <Col xs={0} sm={0} md={10} lg={8}>
+                                <Menu onClick={onClick} 
+                                selectedKeys={[current]} 
+                                mode="horizontal" 
+                                items={rightMenuItems} 
+                                className="custom-menu lg:ml-16"
+                                style={{ background: "#FAF9F6" }} />
                             </Col>
 
                         </Row>
                     </Col>
-                    <Col xs={2} sm={2} md={0}>
-                        <Button type="primary" onClick={showDrawer} className="p-0">
+                    <Col xs={3} sm={3} md={0}>
+                        <Button type="primary" onClick={showDrawer} className=" bg-green-800 text-white my-3">
                             <MenuOutlined />
                         </Button>
                     </Col>
@@ -115,7 +119,7 @@ const index = ({ children, selectedPath = '' }) => {
                 >
                     <Menu onClick={onClick} selectedKeys={[current]} mode="vertical" items={items} />
                     <div className="mx-2">
-                        <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={rightMenuItems} />
+                        <Menu onClick={onClick} selectedKeys={[current]} mode="vertical" items={rightMenuItems} />
                     </div>
                 </Drawer>
             </Header>

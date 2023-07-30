@@ -14,4 +14,6 @@ npm install
 
 ```
 npm run dev
+
 ```
+will run both backend and frontend severs
